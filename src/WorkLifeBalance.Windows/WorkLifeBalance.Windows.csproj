@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../WorkLifeBalance.Application/WorkLifeBalance.Application.csproj" /></ItemGroup>
+</Project>

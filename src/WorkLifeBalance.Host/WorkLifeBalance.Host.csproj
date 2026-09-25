@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../WorkLifeBalance.Infrastructure/WorkLifeBalance.Infrastructure.csproj" />
+    <ProjectReference Include="../WorkLifeBalance.Windows/WorkLifeBalance.Windows.csproj" />
+    <Content Update="wwwroot/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

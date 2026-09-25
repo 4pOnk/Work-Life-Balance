@@ -1,0 +1,191 @@
+select {
+  font: inherit;
+  min-height: 38px;
+  border: 1px solid #d5dde2;
+  border-radius: 5px;
+  background: #fff;
+  color: #252b31;
+  padding: 0 9px;
+  min-width: 0;
+}
+select:focus-visible {
+  outline: 3px solid #4ca992;
+  outline-offset: 3px;
+}
+.rule-scope {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 12px;
+  color: #758089;
+  margin-bottom: 16px;
+}
+.history-totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  color: #758089;
+}
+.timeline {
+  display: block;
+  width: 100%;
+  height: 24px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+.history-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 54px;
+  flex-wrap: wrap;
+}
+.history-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.history-row {
+  display: grid;
+  grid-template-columns: 20px 76px minmax(0, 1fr) 55px 78px;
+  gap: 10px;
+  align-items: center;
+  min-height: 76px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e6e8;
+}
+.history-time,
+.history-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.history-time {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.history-time small {
+  color: #89939a;
+  font-size: 11px;
+}
+.history-activity strong {
+  font-size: 12px;
+  font-weight: 550;
+  overflow-wrap: anywhere;
+}
+.history-activity span {
+  color: #76838b;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.history-activity small {
+  font-size: 10px;
+  color: #89939a;
+}
+.history-category {
+  font-size: 12px;
+  color: #78818a;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.firefox-status {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.firefox-status strong {
+  font-size: 13px;
+}
+.firefox-status p {
+  font-size: 12px;
+  color: #849098;
+  margin: 6px 0 0;
+}
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #277d66;
+  margin-left: auto;
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #172b3a66;
+  z-index: 20;
+}
+.edit-dialog {
+  width: 100%;
+  max-width: 460px;
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  background: #f8fafb;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 16px 60px #15253433;
+}
+.edit-dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  font-size: 12px;
+}
+.edit-dialog input {
+  width: 100%;
+}
+.edit-subject {
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  color: #758089;
+}
+@media (max-width: 680px) {
+  .history-row {
+    grid-template-columns: 20px 65px minmax(0, 1fr) 66px;
+    gap: 7px;
+  }
+  .history-row .history-category {
+    grid-column: 3;
+    grid-row: auto;
+  }
+  .history-row .history-actions {
+    grid-column: 4;
+    grid-row: span 2;
+    justify-content: flex-end;
+  }
+  .history-row .history-activity {
+    grid-column: 3;
+  }
+  .rule-scope {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .firefox-status {
+    flex-wrap: wrap;
+  }
+  .download-link {
+    margin-left: 31px;
+  }
+  .history-actions button {
+    font-size: 12px;
+  }
+  .section-heading input[type="date"] {
+    max-width: 150px;
+  }
+}

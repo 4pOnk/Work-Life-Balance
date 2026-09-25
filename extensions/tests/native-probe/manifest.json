@@ -1,0 +1,8 @@
+{
+  "manifest_version": 2,
+  "name": "WLB isolated native messaging probe",
+  "version": "0.0.1",
+  "browser_specific_settings": { "gecko": { "id": "work-life-balance@local.invalid" } },
+  "permissions": ["nativeMessaging"],
+  "background": { "scripts": ["probe.js"] }
+}

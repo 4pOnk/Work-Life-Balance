@@ -1,0 +1,7 @@
+{
+  "name": "work-life-balance-firefox",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": { "test": "node --test tests/*.test.cjs", "lint": "web-ext lint --source-dir firefox --warnings-as-errors" },
+  "devDependencies": { "web-ext": "10.6.0" }
+}
